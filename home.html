@@ -4,9 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
 </head>
 <body>
+    <header>
+        <a id="logo_link" href="index.html">
+        <img class="logo" src="images/logo.jpg" alt="Your new you Logo" width="120" height="90">
+        </a>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="Habits.html">Page 2</a>
+            <a href="Feelings.html">Site Plan</a>
+            <a href="Books.html">Contact Us</a>
+        </nav>
+    </header>
+    <h1>ENJOY YOUR PRIVILAGE LIFE!</h1>
+<!-- Images used to open the lightbox -->
+<div class="row">
+    <div class="column">
+      <img src="images/dancing.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="images/hiking.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="images/womanmaking.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+    </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="images/dancing.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="images/hiking.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="images/manreadingabook.jpg" style="width:100%">
+      </div>
+  
     
+  
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+      <!-- Thumbnail image controls -->
+      <div class="column">
+        <img class="demo" src="images/dancing.jpg" onclick="currentSlide(1)" alt="Nature">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="images/fallinlove.jpg" onclick="currentSlide(2)" alt="Snow">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="images/hiking.jpg" onclick="currentSlide(3)" alt="Mountains">
+      </div>
+  <h2> :</h2>
+      
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <p>Dry Oar &copy; 20XX - Oliver Enrique Alvarez Carmona</p>
+    <p><a href="site-plan-rafting.html">Habits</a></p>
+    <p><a href="contactus.html">Contact Us</a></p>
+    <div class="social">
+        <a href="https://facebook.com">
+            <img src="images/facebook (1).png" alt="fb icon">
+        </a>
+        <a href="https://twitter.com">
+            <img src="images/twitter.png" alt="twitter icon">
+        </a>
+        <a href="https://instagram.com">
+            <img src="images/instagram.png" alt="instagram icon">
+        </a>
+    </div>
+</footer>
 </body>
 </html>
